@@ -1,9 +1,9 @@
 # Decentralize Aplikasi voting Blockchain Ethereum Reactjs + Truffle
 
-git clone https://github.com/BudiWinarno/votingethereum
+- git clone https://github.com/BudiWinarno/votingethereum
 
-cd client
+- cd client
 
-npm install
+- npm install
 
-npm start
+- npm start
