@@ -24,10 +24,11 @@ const Navbar = () => {
 
                     {/* <li><Link to='/'>Home</Link></li> */}
                     <li>Home</li>
-                    <li>Trending</li>
-                    <li>Performance</li>
-                    <li>Market Cap</li>
-                    <button>Sign in</button>
+                    <li>About Us</li>
+                    <li>News</li>
+                    <li>Chart</li>
+                    <li>Contact</li>
+                    {/* <button>Sign in</button> */}
                 </ul>
                 <div className="hamburger" onClick={handleNav}>
                     {!nav ? (<FaBars className='icon' />) : (<FaTimes className='icon' />)}

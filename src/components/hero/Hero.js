@@ -8,6 +8,9 @@ const Hero = () => {
         <div className="content" style={{ marginTop:"25vh" }}>
           <h1>Cryptocurrency</h1>
           <h1 className="blue">Tracker</h1>
+          <p style={{ color:"white" }}>Lorem ipsum dolor sit amet, 
+            consectetur adipisicing elit. Praesentium, numquam? consectetur adipisicing elit. Praesentium, numquam
+            Lorem ipsum dolor sit amet .</p>
           <div><button>Learn More</button></div>
         </div>
       </div>
