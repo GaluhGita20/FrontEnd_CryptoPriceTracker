@@ -1,13 +1,13 @@
-import React, { useState } from 'react'
+import React, {Component, useState } from 'react'
 import { SiDatabricks } from 'react-icons/si'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import {Link} from 'react-router-dom'
+
 import './NavbarStyle.css'
+// import './NavbarStyle.css'
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
     const handleNav = () => setNav(!nav)
-
 
     return (
         <div name='top' className='navbar'>
@@ -22,7 +22,8 @@ const Navbar = () => {
                     <li><Link to='/cloud'>Cloud</Link></li>
                     <li><Link to='/contact'>Contact</Link></li> */}
 
-                    <li><Link to='/'>Home</Link></li>
+                    {/* <li><Link to='/'>Home</Link></li> */}
+                    <li>Home</li>
                     <li>Trending</li>
                     <li>Performance</li>
                     <li>Market Cap</li>

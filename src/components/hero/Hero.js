@@ -5,7 +5,7 @@ const Hero = () => {
   return(
     <div className="hero">
       <div className="container">
-        <div className="content">
+        <div className="content" style={{ marginTop:"25vh" }}>
           <h1>Cryptocurrency</h1>
           <h1 className="blue">Tracker</h1>
           <div><button>Learn More</button></div>

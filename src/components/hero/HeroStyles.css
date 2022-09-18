@@ -2,6 +2,9 @@
   width: 100%;
   height: 100vh;
   background: url('../../assets/images/bg/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
 
 .hero .container {
