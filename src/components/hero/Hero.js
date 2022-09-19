@@ -3,9 +3,9 @@ import './HeroStyles.css'
 
 const Hero = () => {
   return(
-    <div className="hero">
+    <div className="hero" style={{ overFlow:"hidden", top:"0" }}>
       <div className="container">
-        <div className="content" style={{ marginTop:"25vh" }}>
+        <div className="content" style={{ marginTop:"15vh" }}>
           <h1>Cryptocurrency</h1>
           <h1 className="blue">Tracker</h1>
           <p style={{ color:"white" }}>Lorem ipsum dolor sit amet, 

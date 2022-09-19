@@ -1,7 +1,6 @@
 import React, {Component, useState } from 'react'
 import { SiDatabricks } from 'react-icons/si'
 import { FaBars, FaTimes } from 'react-icons/fa'
-
 import './NavbarStyle.css'
 // import './NavbarStyle.css'
 
@@ -10,7 +9,7 @@ const Navbar = () => {
     const handleNav = () => setNav(!nav)
 
     return (
-        <div name='top' className='navbar'>
+        <div name='top' className='navbar fixed-top'>
             <div className="container">
                 <div className="logo">
                     <SiDatabricks className='icon' />
