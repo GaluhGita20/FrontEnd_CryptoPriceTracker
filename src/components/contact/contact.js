@@ -4,8 +4,15 @@ import React from "react";
 import { Container , Row ,Col } from "react-bootstrap";
 const chart = () => {
     return(
+        <React.Fragment>
+            <div id="contact"></div>
+            <br/>
+            <br/>
+            <br/>
+
         <Container>
-            <div style={{ height:"100vh" , width:"100%" }} >
+
+            <div id="contact" style={{ height:"100vm" , width:"100%" }} >
                 <section id="chart">
                     <div className="section-title" style={{ display:"flex", flexDirection:"row" , flexWrap:"wrap" , justifyContent:"center"}}>   
                         <h6 style={{ fontWeight:"bold" , color:"#106eea" , padding:"10px" , borderRadius:"30px" , backgroundcolor:"#E5F3F8", marginTop:"30px" , marginBottom:"80px" }}>Contact</h6>
@@ -50,6 +57,7 @@ const chart = () => {
                 </section>
             </div>
         </Container>
+        </React.Fragment>
     )
 }
 export default chart;

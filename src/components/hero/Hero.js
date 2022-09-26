@@ -3,7 +3,7 @@ import './HeroStyles.css'
 
 const Hero = () => {
   return(
-    <div className="hero" style={{ overFlow:"hidden", top:"0" }}>
+    <div id="hero1" className="hero" style={{ overFlow:"hidden", top:"0" }}>
       <div className="container">
         <div className="content" style={{ marginTop:"15vh" }}>
           <h1>Cryptocurrency</h1>

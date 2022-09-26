@@ -42,8 +42,8 @@ const Grafik = () => {
     });
 
     return(
-        <Container>
-            <div style={{ height:"100vh" , width:"100%" }} >
+        <Container id="chart" style={{display:"block", position:"static"}}>
+            <div style={{ height:"100%" , width:"100%" }} >
                 <section id="chart">
                     <Row>
                         <Col style={{ padding:"120px" }}>
