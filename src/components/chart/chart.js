@@ -3,7 +3,7 @@ import { useState } from "react";
 import React from "react";
 import { Container,Row , Col , ButtonGroup} from "react-bootstrap";
 
-const Grafik = () => {
+const chart = () => {
     const [cryptoData , setCryptoData] = useState({
         labels:["13:00" ,"14:00" , "15:00" , "16:00" , "17:00" ,"18:00"],
         datasets:[{
@@ -58,4 +58,4 @@ const Grafik = () => {
         </Container>
     )
 }
-export default Grafik;
+export default chart;
