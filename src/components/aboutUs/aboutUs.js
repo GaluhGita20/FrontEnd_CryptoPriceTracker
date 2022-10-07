@@ -13,7 +13,7 @@ const aboutUs = () => {
                 <Container>
                     <section id="about"  style={{ position:"static" , display:"block"}}>
                         <div className="section-title" style={{ display:"flex", flexDirection:"row" , flexWrap:"wrap" , justifyContent:"center" }}>   
-                            <h6 style={{ fontWeight:"bold" , color:"#106eea" , padding:"10px" , borderRadius:"30px" , backgroundcolor:"#E5F3F8", marginTop:"30px" , marginBottom:"30px" }}>About Us</h6>
+                            <h1 style={{ fontWeight:"bold" , color:"#106eea" , padding:"10px" , borderRadius:"30px" , backgroundcolor:"#E5F3F8", marginTop:"30px" , marginBottom:"30px" }}>About Us</h1>
                         </div>
                         <Row xs={3}>
                             <Col>

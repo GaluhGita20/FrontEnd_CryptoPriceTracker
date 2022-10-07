@@ -37,18 +37,19 @@ function TableCrypto() {
         <Container>
         <section id="news" style={{ width:"100%" , height:"100%"}}   >
             <div className="section-title" style={{ display:"flex", flexDirection:"row" , flexWrap:"wrap" , justifyContent:"center" , marginBottom:"10px" }}>   
-                <h6 style={{ fontWeight:"bold" , color:"#106eea" , padding:"10px" , borderRadius:"30px" , backgroundcolor:"#E5F3F8" , marginTop:"5vh"}}>Price Crypto</h6>
+                <h1 style={{ fontWeight:"bold" , color:"#106eea" , padding:"10px" , borderRadius:"30px" , backgroundcolor:"#E5F3F8" , marginTop:"5vh"}}>Price Crypto</h1>
             </div>
             <div>
             <TableContainer component={Paper}>
                 <Table style={{ width:"100%"}} size="large" aria-label="a dense table">
                     <TableHead>
                     <TableRow>
-                        <TableCell>ID</TableCell>
+                        <TableCell>Rank</TableCell>
+                        <TableCell align="left">Symbol</TableCell>
                         <TableCell align="left">Name</TableCell>
                         <TableCell align="left">Price USD</TableCell>
-                        <TableCell align="left">Carbs&nbsp;(g)</TableCell>
-                        <TableCell align="left">Protein&nbsp;(g)</TableCell>
+                        <TableCell align="left">Market Cap USD</TableCell>
+                        <TableCell align="left">Volume USD 24Hr</TableCell>
                     </TableRow>
                     </TableHead>
                     <TableBody>
@@ -63,7 +64,8 @@ function TableCrypto() {
                         <TableCell align="left">{row.symbol}</TableCell>
                         <TableCell align="left">{row.name}</TableCell>
                         <TableCell align="left">${row.priceUsd}</TableCell>
-                        <TableCell align="left">{row.protein}</TableCell>
+                        <TableCell align="left">${row.marketCapUsd}</TableCell>
+                        <TableCell align="left">${row.volumeUsd24Hr}</TableCell>
                         </TableRow>
                     ))}
                     </TableBody>
