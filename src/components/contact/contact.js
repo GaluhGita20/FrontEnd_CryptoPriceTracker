@@ -34,24 +34,18 @@ const chart = () => {
                     <Row xs={3}>
                         <Col style={{  display:"flex" , flexDirection:"row" , flexWrap:"wrap" , justifyContent:"center" ,alignItems:"center"}}>
                             <h6 style={{ fontWeight:"bold" , color:"#106eea" , padding:"10px" , borderRadius:"30px" , backgroundcolor:"#E5F3F8", marginTop:"30px" , marginBottom:"30px" }}>Visit Us</h6>
-                            <p style={{ textAlign:"center" }}>Lorem ipsum dolor sit amet, 
-                                consectetur adipisicing elit. Praesentium, numquam? consectetur adipisicing elit. Praesentium, numquam
-                                Lorem ipsum dolor sit amet </p>
+                            <p style={{ textAlign:"center" }}>Butuh bantuan ? Datangi kami sekarang juga. </p>
                                 <h6 style={{ fontWeight:"bold" , color:"#106eea" , fontSize:"20px",  padding:"10px" , borderRadius:"30px" , backgroundcolor:"#E5F3F8", marginBottom:"30px"  }}>Jimbaran , Bali</h6>
                         </Col>
                         <Col style={{  display:"flex" , flexDirection:"row" , flexWrap:"wrap" , justifyContent:"center" ,alignItems:"center"}}>
                             <h6 style={{ fontWeight:"bold" , color:"#106eea" , padding:"10px" , borderRadius:"30px" , backgroundcolor:"#E5F3F8", marginTop:"30px" , marginBottom:"30px" }}>Phone</h6>
-                            <p style={{ textAlign:"center" }}>Lorem ipsum dolor sit amet, 
-                                consectetur adipisicing elit. Praesentium, numquam? consectetur adipisicing elit. Praesentium, numquam
-                                Lorem ipsum dolor sit amet </p>
+                            <p style={{ textAlign:"center" }}>Info lebih lanjut, hubungi kontak yang tertera dibawah ini</p>
                                 <h6 style={{ fontWeight:"bold" , color:"#106eea" , padding:"10px" , borderRadius:"30px" , backgroundcolor:"#E5F3F8",fontSize:"20px", marginBottom:"30px" }}>+6282 339 617 442</h6>
                         </Col>
                         <Col style={{  display:"flex" , flexDirection:"row" , flexWrap:"wrap" , justifyContent:"center" ,alignItems:"center"}}>
                             <h6 style={{ fontWeight:"bold" , color:"#106eea" , padding:"10px" , borderRadius:"30px" , backgroundcolor:"#E5F3F8", marginTop:"30px" , marginBottom:"30px" }}>Mail</h6>
-                            <p style={{ textAlign:"center" }}>Lorem ipsum dolor sit amet, 
-                                consectetur adipisicing elit. Praesentium, numquam? consectetur adipisicing elit. Praesentium, numquam
-                                Lorem ipsum dolor sit amet </p>
-                                <h6 style={{ fontWeight:"bold" , color:"#106eea" , padding:"10px" , borderRadius:"30px" , backgroundcolor:"#E5F3F8", fontSize:"20px",  marginBottom:"30px" }}>Bjorka@gmail.com</h6>
+                            <p style={{ textAlign:"center" }}>Untuk kerja sama, silahkan hubungi kami melalui email yang tertera dibawah ini</p>
+                                <h6 style={{ fontWeight:"bold" , color:"#106eea" , padding:"10px" , borderRadius:"30px" , backgroundcolor:"#E5F3F8", fontSize:"20px",  marginBottom:"30px" }}>admin@gmail.com</h6>
                         </Col>
                     </Row>
                 </section>
