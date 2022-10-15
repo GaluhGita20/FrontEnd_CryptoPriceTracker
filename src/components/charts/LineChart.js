@@ -42,12 +42,12 @@ const LineChart = () => {
     }, []);
 
     const data = {
-        labels: chartData.sort((a, b) => b.atl - a.atl).slice(0, 5).map(coin => coin.name),
+        labels: chartData.sort((a, b) => b.atl - a.atl).slice(0, 10).map(coin => coin.name),
         datasets: [{
             label: 'All-Time-Low',
             fontColor: colors.common.white,
             fontWeight: BloodtypeOutlined,
-            data: chartData.sort((a, b) => b.atl - a.atl).slice(0, 5).map(coin => coin.ath),
+            data: chartData.sort((a, b) => b.atl - a.atl).slice(0, 10).map(coin => coin.ath),
             fill: false,
             borderColor: 'rgb(255, 99, 132)',
             pointBackgroundColor: 'rgb(255, 99, 132)',
