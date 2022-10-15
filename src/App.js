@@ -12,6 +12,8 @@ import LineChart from './components/charts/LineChart';
 import Grid from '@mui/material/Grid';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
+import { Doughnut } from 'react-chartjs-2';
+import DoughnutChart from './components/charts/DoughnutChart';
 
 
 
@@ -26,15 +28,15 @@ function App() {
             <Grid item xs={12}>
               <CoinMarkets />
             </Grid>
-          </Grid>
-          <Grid container spacing={3}>
             <Grid item xs={12}>
               <BarChart/>      
             </Grid>
-          </Grid>
-          
-          <Grid item md={8} xs={12}>
-              <LineChart />
+            <Grid item md={4} xs={12}>
+              <DoughnutChart />
+            </Grid>
+            <Grid item md={8} xs={12}>
+                <LineChart />
+            </Grid>
           </Grid>
           <Grid container spacing={3}>
             <Grid item xs={12}>

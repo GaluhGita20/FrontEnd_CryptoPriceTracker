@@ -42,12 +42,12 @@ const LineChart = () => {
     }, []);
 
     const data = {
-        labels: chartData.sort((a, b) => b.atl - a.atl).slice(0, 10).map(coin => coin.name),
+        labels: chartData.sort((a, b) => b.current_price - a.current_price).slice(0, 10).map(coin => coin.name),
         datasets: [{
             label: 'All-Time-Low',
             fontColor: colors.common.white,
             fontWeight: BloodtypeOutlined,
-            data: chartData.sort((a, b) => b.atl - a.atl).slice(0, 10).map(coin => coin.ath),
+            data: chartData.sort((a, b) => b.current_price - a.current_price).slice(0, 10).map(coin => coin.ath),
             fill: false,
             borderColor: 'rgb(255, 99, 132)',
             pointBackgroundColor: 'rgb(255, 99, 132)',
@@ -106,10 +106,10 @@ const LineChart = () => {
       };
 
     return (
-        <Card sx={{marginTop: '50px'}}>
+        <Card sx={{marginTop: '50px' }}>
             <CardHeader
                 title='Top 10 Cryptocurrencies Berdasarkan All-Time-Low' 
-                subheader='Top 5 Cryptocurrencies Tertinggi Diukur Berdasarkan Their All-Time-Low (ATL)'
+                subheader='Top 10 Cryptocurrencies Diukur Berdasarkan All-Time-Low (ATL)'
             />
             <Divider />
             <CardContent>

@@ -9,15 +9,12 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardHeader from '@mui/material/CardHeader';
 import Divider from '@mui/material/Divider';
-import { deepPurple } from '@mui/material/colors';
-import { useTheme } from '@mui/material/styles';
+import { deepPurple, deepOrange, lightGreen, lightBlue, cyan, red, pink, indigo, teal, brown } from '@mui/material/colors';
 import { colors } from '@mui/material';
 
 Chart.register(...registerables);
 
 const DoughnutChart = () => {
-    const theme = useTheme();
-
     const [chartData, setChartData] = useState([]);
 
     const fetchTopCoins = () => {
@@ -37,15 +34,20 @@ const DoughnutChart = () => {
     }, []);
 
     const data = {
-        labels: chartData.sort((a, b) => a.current_price - b.current_price).filter(coin => coin.current_price > 100).slice(0, 5).map(coin => coin.name),
+        labels: chartData.sort((a, b) => a.current_price > b.current_price ? 1 : -1).filter(coin => coin.current_price > 10).slice(0, 10).map(coin => coin.name),
         datasets: [
             {
-                data: chartData.sort((a, b) => a.current_price > b.current_price ? 1 : -1).filter(coin => coin.current_price > 100).slice(0, 5).map(coin => coin.current_price),
+                data: chartData.sort((a, b) => a.current_price > b.current_price ? 1 : -1).filter(coin => coin.current_price > 10).slice(0, 10).map(coin => coin.current_price),
                 backgroundColor: [
-                    theme.palette.customYellow.dark,
-                    theme.palette.error.dark,
-                    theme.palette.primary.main,
-                    theme.palette.success.dark,
+                    red[500],
+                    deepOrange[100],
+                    lightBlue[600],
+                    lightGreen[600],
+                    cyan[600],
+                    pink[100],
+                    indigo[300],
+                    teal[300],
+                    brown[300],
                     deepPurple[600],
                 ],
                 borderWidth: 1,
@@ -66,7 +68,7 @@ const DoughnutChart = () => {
                 display: true,
                 padding: 30,
                 labels: {
-                    color: theme.palette.text.primary,
+                    color: '#000',
                     font: {
                         size: 14,
                     },
@@ -90,10 +92,10 @@ const DoughnutChart = () => {
     };
 
     return (
-        <Card>
+        <Card sx={{marginTop: '50px' }}>
             <CardHeader 
-                title='Top 5 Cheapest Cryptocurrencies' 
-                subheader='Top 5 Cheapest Cryptocurrencies Above $100 Measured By Their Market Price' 
+                title='Top 10 Cryptocurrencies Termurah' 
+                subheader='Top 10 Cryptocurrencies Termurah Sekitar $10' 
             />
             <Divider />
             <CardContent>
