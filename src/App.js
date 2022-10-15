@@ -14,12 +14,17 @@ import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import { Doughnut } from 'react-chartjs-2';
 import DoughnutChart from './components/charts/DoughnutChart';
-
-
+import { BrowserRouter, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className='app'>
+      <BrowserRouter>
+          {/* <Header /> */}
+          {/* <Route  path="/news" component={News} /> */}
+          {/* <Route exact path="/contact" component={Contact} /> */}
+      </BrowserRouter>
+
       <Navbar/>
       <Hero/>
       <Box backgroundColor="#fff">
@@ -38,9 +43,16 @@ function App() {
                 <LineChart />
             </Grid>
           </Grid>
+        </Container>
           <Grid container spacing={3}>
             <Grid item xs={12}>
+            {/* <Route  path="/news" component={News} /> */}
               <News/>
+              <BrowserRouter>
+              {/* <Header /> */}
+              {/* <Route  path="/news" component={News} /> */}
+              {/* <Route exact path="/contact" component={Contact} /> */}
+              </BrowserRouter>
             </Grid>
           </Grid>
           <Grid container spacing={3}>
@@ -53,7 +65,6 @@ function App() {
               <Contact/> 
             </Grid>
           </Grid>
-        </Container>
       </Box>
       <Footer/>
     </div>
