@@ -13,7 +13,7 @@ const Navbar = () => {
         <div name='top' className='navbar fixed-top'>
             <div className="container">
                 <div className="logo">
-                    <SiDatabricks className='icon' />
+                    <SiDatabricks className='icon' />Crypto &nbsp;<span style={{ fontWeight:"bold" }}>Tracker</span>
                 </div>
 
                 <ul className={nav ? 'nav-menu active' : 'nav-menu'}>

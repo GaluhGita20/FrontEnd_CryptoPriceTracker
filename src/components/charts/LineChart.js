@@ -64,6 +64,7 @@ const LineChart = () => {
                 display: false,
             },
             datalabels: {
+                theme : "#111" ,
                 display: isMd ? true : false,
                 color: theme.palette.mode === 'dark' ? theme.palette.text.primary : theme.palette.text.secondary,
                 align: 'top',
@@ -106,7 +107,8 @@ const LineChart = () => {
       };
 
     return (
-        <Card sx={{marginTop: '50px' }}>
+        
+        <Card sx={{marginTop: '50px'  , backgroundColor:"#fff"}} >
             <CardHeader
                 title='Top 10 Cryptocurrencies Berdasarkan All-Time-Low' 
                 subheader='Top 10 Cryptocurrencies Diukur Berdasarkan All-Time-Low (ATL)'
