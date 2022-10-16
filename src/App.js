@@ -6,6 +6,7 @@ import News from './components/news/news';
 import Contact from './components/contact/contact';
 import Footer from './components/footer/footer';
 import CoinMarkets from "./components/table/CoinMarkets";
+import ContentHeader from "./components/additional/ContentHeader";
 import Container from '@mui/material/Container';
 import BarChart from './components/charts/BarChart';
 import LineChart from './components/charts/LineChart';
@@ -25,6 +26,9 @@ function App() {
       <Box backgroundColor="#fff">
         <Container maxWidth={false}>
           <Grid container spacing={3}>
+            <Grid item xs={12}>
+              <ContentHeader/>
+            </Grid>
             <Grid item xs={12}>
               <CoinMarkets />
             </Grid>
