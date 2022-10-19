@@ -24,11 +24,11 @@ const Navbar = () => {
 
                     {/* <li><Link to='/'>Home</Link></li> */}
                     
-                    <li><a href="#hero1" style={{color:'white', textDecoration:'none'}}> Home</a></li>
-                    <li><a href="#aboutUs" style={{color:'white', textDecoration:'none'}}> About Us</a></li>
-                    <li><a href="#news" style={{color:'white', textDecoration:'none'}}>News</a></li>
-                    <li><a href="#chart" style={{color:'white', textDecoration:'none'}}>Chart</a></li>
-                    <li><a href="#contact" style={{color:'white', textDecoration:'none'}}>Contact</a></li>
+                    <li><a href="home" style={{color:'white', textDecoration:'none'}}> Home</a></li>
+                    <li><a href="about" style={{color:'white', textDecoration:'none'}}> About Us</a></li>
+                    <li><a href="news" style={{color:'white', textDecoration:'none'}}>News</a></li>
+                    <li><a href="chart" style={{color:'white', textDecoration:'none'}}>Chart</a></li>
+                    <li><a href="contact" style={{color:'white', textDecoration:'none'}}>Contact</a></li>
                     {/* <button>Sign in</button> */}
                 </ul>
                 <div className="hamburger" onClick={handleNav}>
