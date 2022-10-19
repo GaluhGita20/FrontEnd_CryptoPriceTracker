@@ -1,21 +1,57 @@
 import React from "react"
 import {Row , Col , Button, Card ,Container} from 'react-bootstrap'
+import Axios from "./axios";
+import { useEffect, useState } from "react";
+import moment from "moment";
+const News = () => {
+    const [news , setNews] = useState([])
 
-const news = () => {
+    useEffect(()=>{
+        const fetchNews= async()=>{
+            const data = await Axios.get("/everything?q=bitcoin&apiKey=8ff25637c0324ee1b6d21e49a849f873")
+            setNews(data)
+            // console.log(data.data)
+        }   
+        fetchNews()
+    },[])
+
+   //console.log(news.data.articles)
+
     return(
         <React.Fragment>
             <div id="news" style={{ backgroundColor:"rgb(4, 2, 20)" , height:"100vh"}}>
             <br/>
             <br/>
-
     <div>
         <Container>
         <section id="news" style={{  position:"static" , display:"block"}}   >
-            <div className="section-title" style={{ display:"flex", flexDirection:"row" , flexWrap:"wrap" , justifyContent:"center" , marginBottom:"10px" }}>   
-                <h1 style={{ fontWeight:"bold" , fontSize:"20px", color:"#fff" , padding:"10px" , borderRadius:"30px" , backgroundcolor:"#E5F3F8" , marginTop:"5vh"}}>News</h1>
+            <div className="section-title" style={{ display:"flex", flexDirection:"row" , flexWrap:"wrap" , justifyContent:"center" , marginBottom:"3px" }}>   
+                <h1 style={{ fontWeight:"bold" , fontSize:"18px", color:"#fff" , borderRadius:"30px" , backgroundcolor:"#E5F3F8" }}>News</h1>
             </div>
-            <Row xs={3}>
-                <Col className="mt-3" style={{ display:"flex", flexDirection:"row" , flexWrap:"wrap" , justifyContent:"center" , marginBottom:"10px" }}>
+            <Row xs={4} style={{ overflow:"auto" , width:"100%" , height:"100vh" }}>
+               {
+                    news.data.articles.map((el=>{
+                        
+                        return (
+                            <Col>
+                                <Card style={{ width: '20rem', height:'20rem', marginTop:"1vh",marginBottom:"1vh" , boxShadow:" 0 1rem 2rem hsl(10 200% 5% / 20%)" , border:"1px solid #106eea", background:"rgb(4, 2, 20)" }}>
+                                    <Card.Img variant="top" src={el.urlToImage}  />
+                                    <p style={{ fontSize:"12px" , position:"absolute" , top:"135px" ,left:"12px", color:"white" ,fontWeight:"500" , padding:"3px" ,width:"200px" , borderRadius:"2px"   }}>{moment(el.publishedAt).format('MM-DD-YYYY')}</p>
+                                    <Card.Body>
+                                        <Card.Title><a href={el.url} style={{ textDecoration:"none", fontSize:"15px" }}>{el.title}</a></Card.Title>
+                                        <Card.Text style={{ fontSize:"13px" , color: "white" , textOverflow:"ellipsis"}}>{el.description}
+                                        
+                                         </Card.Text>
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+                        );
+                    }))
+                }  
+            </Row>
+
+
+                {/* <Col className="mt-3" style={{ display:"flex", flexDirection:"row" , flexWrap:"wrap" , justifyContent:"center" , marginBottom:"10px" }}>
                     <Card style={{ width: '20rem' , boxShadow:" 0 1rem 2rem hsl(10 200% 5% / 20%)" , border:"1px solid #106eea", background:" rgb(4, 2, 20)" }}>
                         <Card.Img variant="top" src={require('./news1-bg.jpeg') } />
                         <p style={{ fontSize:"15px" , position:"absolute" , top:"150px" ,left:"12px", color:"white" ,fontWeight:"500" , padding:"3px" ,width:"100px" , borderRadius:"2px"   }}>07 Okt 2022</p>
@@ -57,7 +93,7 @@ const news = () => {
                         </Card.Body>
                     </Card>
                 </Col>
-            </Row>
+            </Row> */}
         </section>
     </Container>
 </div>
@@ -66,4 +102,4 @@ const news = () => {
     )
 }
 
-export default news;
+export default News;
