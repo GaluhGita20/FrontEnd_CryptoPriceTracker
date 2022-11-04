@@ -29,7 +29,7 @@ const aboutUs = () => {
                         <Row xs={3} style={{ marginTop:"35px" }}>
                             <Col style={{ color:"black" }}>
                                 <h6 style={{ textAlign:"center" , fontWeight:"bold" ,color:"#106eea" , fontSize:"18px" }}>About Us</h6>
-                                <p style={{  fontSize:"17px", color:"#fff"}}>Lorem ipsum dolor sit amet, 
+                                <p style={{  fontSize:"17px", color:"#fff"}}>Give You The Latest News About cryptocurrency, 
                                     consectetur adipisicing elit. Praesentium, numquam? consectetur adipisicing elit. Praesentium, numquam
                                     Lorem ipsum dolor sit amet .
                                     consectetur adipisicing elit. Praesentium, numquam? consectetur adipisicing elit. Praesentium,
@@ -38,7 +38,7 @@ const aboutUs = () => {
                             </Col>
                             <Col>
                                 <h6 style={{ textAlign:"center" , fontWeight:"bold" ,color:"#106eea" , fontSize:"18px" }}>About Us</h6>
-                                <p style={{  fontSize:"17px" , color:"#fff"}}>Lorem ipsum dolor sit amet, 
+                                <p style={{  fontSize:"17px" , color:"#fff"}}>Give You The Latest Price About cryptocurrency, 
                                     consectetur adipisicing elit. Praesentium, numquam? consectetur adipisicing elit. Praesentium, numquam
                                     Lorem ipsum dolor sit amet .
                                     consectetur adipisicing elit. Praesentium, numquam? consectetur adipisicing elit. Praesentium,

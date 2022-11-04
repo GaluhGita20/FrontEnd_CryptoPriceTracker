@@ -16,6 +16,7 @@ body{
   background: #0d2154;
   width: 100%;
 }
+
 footer::before{
   content: '';
   position: absolute;
@@ -25,38 +26,47 @@ footer::before{
   width: 100%;
   background: #AFAFB6;
 }
+
 footer .content{
   max-width: 1250px;
   margin: auto;
   padding: 30px 40px 40px 40px;
 }
+
 footer .content .top{
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 50px;
 }
+
 .content .top .logo-details{
   color: #fff;
   font-size: 30px;
 }
+
 .content .top .media-icons{
   display: flex;
 }
+
 .top .media-icons a:nth-child(1){
   background: #4267B2;
 }
+
 .top .media-icons a:nth-child(1):hover{
   color: #4267B2;
   background: #fff;
 }
+
 .top .media-icons a:nth-child(2){
   background: #1DA1F2;
 }
+
 .top .media-icons a:nth-child(2):hover{
   color: #1DA1F2;
   background: #fff;
 }
+
 .top .media-icons a:nth-child(3){
   background: #E1306C;
 }
