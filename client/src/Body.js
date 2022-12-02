@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Table, Form, Button, Container } from "react-bootstrap";
 
-const Body = ({ canidate1, canidate2, account, votecanidate }) => {
+const Body = ({ canidate1, canidate2, canidate3, canidate4,canidate5, account, votecanidate }) => {
   const [Canidate, setCandidate] = useState("");
   const onchange = (e) => {
     setCandidate(e.target.value);
@@ -20,8 +20,8 @@ const Body = ({ canidate1, canidate2, account, votecanidate }) => {
           <thead>
             <tr>
               <th>No</th>
-              <th>Nama Calon Presiden</th>
-              <th>Jumlah Vote</th>
+              <th>Nama Pilihan Crypto</th>
+              <th>Jumlah Like</th>
             </tr>
           </thead>
           <tbody>
@@ -35,6 +35,21 @@ const Body = ({ canidate1, canidate2, account, votecanidate }) => {
               <td>{canidate2.name}</td>
               <td>{canidate2.voteCount}</td>
             </tr>
+            <tr>
+              <td>{canidate3.id}</td>
+              <td>{canidate3.name}</td>
+              <td>{canidate3.voteCount}</td>
+            </tr>
+            <tr>
+              <td>{canidate4.id}</td>
+              <td>{canidate4.name}</td>
+              <td>{canidate4.voteCount}</td>
+            </tr>
+            <tr>
+              <td>{canidate5.id}</td>
+              <td>{canidate5.name}</td>
+              <td>{canidate5.voteCount}</td>
+            </tr>
           </tbody>
 
           <br></br>
@@ -43,7 +58,7 @@ const Body = ({ canidate1, canidate2, account, votecanidate }) => {
 
       <Container>
         <div className="my-3 ml-auto text-left" style={{ width: "100%" }}>
-          <h5>Pilih Presiden : </h5>
+          <h5>Pilih Crypto : </h5>
           <form onSubmit={onsubmit}>
             <select
               name="candidate"
@@ -55,9 +70,12 @@ const Body = ({ canidate1, canidate2, account, votecanidate }) => {
               </option>
               <option value="1">{canidate1.name}</option>
               <option value="2">{canidate2.name}</option>
+              <option value="3">{canidate3.name}</option>
+              <option value="4">{canidate4.name}</option>
+              <option value="5">{canidate5.name}</option>
             </select>
             <button className="btn-primary mt-2 btn-md w-100">
-              Pilih Presiden{""}
+              Pilih Crypto{""}
             </button>
           </form>
         </div>

@@ -18,8 +18,13 @@ contract Election {
     event electionupdated(uint256 indexed _candidateId);
 
     constructor() {
-        addCandidate("Jokowi");
-        addCandidate("Prabowo");
+        addCandidate("Etherum");
+        addCandidate("Bitcoin");
+        addCandidate("Litecoin");
+        addCandidate("Binance USD");
+        addCandidate("XRP");
+
+
     }
 
     function addCandidate(string memory name) private {
